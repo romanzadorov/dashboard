@@ -1,0 +1,32 @@
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header">
+            <h2>Dashboard</h2>
+            <h4>Demo Project</h4>
+        </div>
+        <img src="../../../../assets/img/charts_1.jpg" alt="Soufiane FADIL">
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Pages</h2>
+
+    <mat-list-item routerLinkActive="active" routerLink="/"><a matLine>Dashboard</a></mat-list-item>
+    <mat-list-item routerLinkActive="active" routerLink="/posts"><a matLine>Posts</a></mat-list-item>
+    <mat-list-item routerLinkActive="active" routerLink="/articles"><a matLine>Articles</a></mat-list-item>
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Tools</h2>
+
+    <a mat-list-item routerLinkActive="active" routerLink="/contacts">
+        <mat-icon>import_contacts</mat-icon>
+        Contacts
+    </a>
+
+    <a mat-list-item routerLinkActive="active" routerLink="/contacts">
+        <mat-icon>contact_phone</mat-icon>
+        Leads
+    </a>
+
+</mat-nav-list>
