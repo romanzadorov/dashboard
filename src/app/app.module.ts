@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultModule } from './default/default.module';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   declarations: [
