@@ -42,6 +42,7 @@ export class DashboardComponent implements OnInit {
   cards = [];
   pieChart = [];
   tourDeFrance = [];
+  semiCircleDonut = [];
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
@@ -55,7 +56,7 @@ export class DashboardComponent implements OnInit {
     this.cards = this.dashboardService.cards();
     this.pieChart = this.dashboardService.pieChart();
     this.tourDeFrance = this.dashboardService.tourDeFrance();
-    // console.log(this.tourDeFrance);
+    this.semiCircleDonut = this.dashboardService.semiCircleDonut();
     
 
     this.dataSource.paginator = this.paginator;

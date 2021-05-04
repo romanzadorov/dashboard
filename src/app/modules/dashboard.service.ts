@@ -66,7 +66,7 @@ export class DashboardService {
 
   tourDeFrance(){
     // Data generated from http://www.bikeforums.net/professional-cycling-fans/1113087-2017-tour-de-france-gpx-tcx-files.html
-    this.elevationData = [
+    const elevationData = [
   [0.0, 225],
   [0.1, 226],
   [0.2, 228],
@@ -1947,9 +1947,24 @@ export class DashboardService {
   [187.7, 1167],
   [187.8, 1170]
     ];
-
-    // console.log(this.elevationData);
     
-    return this.elevationData;
+    return elevationData;
+  }
+
+  semiCircleDonut() {
+    return [
+      ['Chrome', 58.9],
+      ['Firefox', 13.29],
+      ['Internet Explorer', 13],
+      ['Edge', 3.78],
+      ['Safari', 3.42],
+      {
+        name: 'Other',
+        y: 7.61,
+        dataLabels: {
+          enabled: false
+        }
+      }
+    ];
   }
 }

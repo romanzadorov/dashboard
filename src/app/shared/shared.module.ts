@@ -12,6 +12,9 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { LineChartWithAnnotationsComponent } from './widgets/line-chart-with-annotations/line-chart-with-annotations.component';
+import { SemiCircleDonutComponent } from './widgets/semi-circle-donut/semi-circle-donut.component';
+import { SpeedometerComponent } from './widgets/speedometer/speedometer.component';
+import { ClockComponent } from './widgets/clock/clock.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { LineChartWithAnnotationsComponent } from './widgets/line-chart-with-ann
     AreaComponent,
     CardComponent,
     PieComponent,
-    LineChartWithAnnotationsComponent
+    LineChartWithAnnotationsComponent,
+    SemiCircleDonutComponent,
+    SpeedometerComponent,
+    ClockComponent
   ],
   imports: [
     CommonModule,
@@ -42,7 +48,10 @@ import { LineChartWithAnnotationsComponent } from './widgets/line-chart-with-ann
     AreaComponent,
     CardComponent,
     PieComponent,
-    LineChartWithAnnotationsComponent
+    LineChartWithAnnotationsComponent,
+    SemiCircleDonutComponent,
+    SpeedometerComponent,
+    ClockComponent
   ]
 })
 export class SharedModule { }

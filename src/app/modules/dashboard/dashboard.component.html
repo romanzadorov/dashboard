@@ -1,6 +1,52 @@
+<div 
+    fxLayout="row wrap" 
+    fxLayout.lt-sm="column" 
+    fxLayoutGap="20px" 
+    fxLayoutAlign="flex-start">
+    <div 
+        fxFlex="0 1 calc(30% - 20px)"
+        fxFlex.lt-md="0 1 calc(100% - 20px)"
+        fxFlex.lt-sm="100%">
+        <div class="mat-elevation-z8">
+            <app-semi-circle-donut [data]="pieChart"></app-semi-circle-donut>
+        </div>
+    </div>
+
+    <!-- <div 
+        fxFlex="0 1 calc(30% - 20px)"
+        fxFlex.lt-md="0 1 calc(100% - 20px)"
+        fxFlex.lt-sm="100%">
+        <div class="mat-elevation-z8">
+            <app-clock></app-clock>
+        </div>
+    </div> -->
+
+    <div 
+        fxFlex="0 1 calc(30% - 20px)"
+        fxFlex.lt-md="0 1 calc(100% - 20px)"
+        fxFlex.lt-sm="100%">
+        <div class="mat-elevation-z8">
+            <app-widget-pie [data]="pieChart"></app-widget-pie>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+
+
 <div>
     <app-widget-area [data]="bigChart"></app-widget-area>
 </div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
 
 <div>
     <app-line-chart-with-annotations [data]="tourDeFrance"></app-line-chart-with-annotations>
